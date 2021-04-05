@@ -1,0 +1,47 @@
+.add_item {
+  padding:20px;
+  height:10vh;
+  display:flex;
+  justify-content:space-around;
+  flex-direction:column;
+  width:20%;
+  align-items:center;
+  /* background-color: skyblue; */
+}
+
+.add_item input {
+  padding: 5px;
+  border-radius: 3px;
+}
+
+
+.add_item button {
+  padding: 3px 5px;
+}
+
+ul li {
+  width:200px;
+  display:flex;
+  justify-content:space-between;
+  list-style-type:none;  
+  padding:7px;
+  border-radius:3px;
+  transition:0.3s linear;
+  margin-bottom: 8px;
+  box-shadow:1px 1px 1px #7a7a7a;
+}
+
+ul li:hover {
+  box-shadow:1px 1px 3px #595959;
+}
+
+ul li button {
+  border-radius:50%;
+  border:none;
+  outline:none;
+  text-align: center;
+}
+
+ul li button:hover {
+  box-shadow:0 0 3px #595959;
+}

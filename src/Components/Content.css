@@ -1,0 +1,62 @@
+
+.content {
+  top: -500px;
+  position:relative;
+  display:flex;
+  flex-direction: column;
+  /* align-items:'center'; */
+  width:40%;
+  backdrop-filter: blur(8px);
+  transition:top 1s linear,transform 1s linear;
+}
+
+
+.content h3 {
+  text-align : center;
+  color: white;
+}
+
+
+@keyframes text-anim {
+  from {
+    opacity : 1
+  }
+  to {
+    opacity : 0.5
+  }
+}
+
+@keyframes slide-content {
+  from {
+    position:relative;
+    top:-500px;
+    transform : rotate(0deg);
+  }
+  to {
+    position:relative;
+    top : 0px;
+    transform : rotate(360deg);
+  }
+}
+
+.content p {
+  text-align : center;
+  transition : font-size 0.5s linear;
+  color: white;
+  
+}
+
+.content:hover p{
+  animation-name: text-anim;
+  animation-duration: 2s;
+}
+
+.App:hover .content{
+  position:relative;
+  /* animation-name: slide-content;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; */
+  transform : rotate(360deg);
+  top : 0px;
+  transition:top 1s linear,transform 1s linear;
+}

@@ -1,0 +1,26 @@
+.App {
+  display:flex;
+  flex:1;
+  flex-direction: column;
+  height:100%;
+  width:100%;
+}
+
+.header {
+  margin: 0;
+  padding: 0px 10px;
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top:0;
+  z-index: 1000;
+}
+
+.header > h2 {
+  font-weight: bold;
+  font-size: 30px;
+  margin: 12px;
+  color: white;
+}
